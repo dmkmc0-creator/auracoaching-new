@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AURA COACHING</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%237c3aed'/%3E%3Cstop offset='100%25' style='stop-color:%2322c55e'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='%230a0a0f' width='100' height='100'/%3E%3Ccircle cx='50' cy='50' r='35' fill='url(%23grad)'/%3E%3Ctext x='50' y='62' font-family='Arial' font-size='36' font-weight='bold' fill='white' text-anchor='middle'%3E★%3C/text%3E%3C/svg%3E">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Animasyonlu ışık küreleri -->
+    <div class="light-orbs">
+        <div class="light-orb light-orb-1"></div>
+        <div class="light-orb light-orb-2"></div>
+        <div class="light-orb light-orb-3"></div>
+    </div>
+    
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="#" class="logo">
+                    <div class="logo-icon"><i class="fas fa-star"></i></div>
+                    AURA<span class="logo-highlight">COACHING</span>
+                </a>
+                <div class="nav-links">
+                    <a href="#coaches" class="nav-link" data-i18n="nav.coaches">Koçlarımız</a>
+                    <a href="#how-it-works" class="nav-link" data-i18n="nav.howItWorks">Nasıl Çalışır?</a>
+                    <a href="#features" class="nav-link" data-i18n="nav.features">Özellikler</a>
+                    <a href="#testimonials" class="nav-link" data-i18n="nav.testimonials">Yorumlar</a>
+                    <a href="#faq" class="nav-link" data-i18n="nav.faq">SSS</a>
+                    <a href="#apply" class="nav-link btn-secondary" data-i18n="nav.apply">Başvur</a>
+                </div>
+                
+                <!-- Language Switcher -->
+                <div class="lang-switcher">
+                    <button class="lang-btn active" data-lang="tr">TR</button>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                </div>
+                
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge" data-i18n="hero.badge"><i class="fas fa-trophy"></i> Türkiye'nin En Profesyonel Koçluk Platformu</div>
+                <h1 class="hero-title">
+                    <span class="typewriter" id="typewriter"></span><span class="cursor">|</span>
+                </h1>
+                <p class="hero-subtitle" data-i18n="hero.subtitle">
+                    Radiant ve Immortal seviye koçlarımızla oyun içi performansınızı zirveye taşıyın. Aim geliştirme, oyun bilgisi (game sense), advanced movement, stratejik pozisyon alma ve daha fazlası!
+                </p>
+                <div class="hero-buttons">
+                    <a href="#apply" class="btn-primary" data-i18n="hero.cta1"><i class="fas fa-paper-plane"></i> Hemen Başvur</a>
+                    <a href="#coaches" class="btn-outline" data-i18n="hero.cta2"><i class="fas fa-users"></i> Koçlarımızı Gör</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-number" data-count="156">0</div>
+                        <div class="stat-label" data-i18n="hero.stat1"><i class="fas fa-calendar-check"></i> Toplam Ders</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number" data-count="45">0</div>
+                        <div class="stat-label" data-i18n="hero.stat2"><i class="fas fa-users"></i> Mutlu Öğrenci</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number" data-count="8">0</div>
+                        <div class="stat-label" data-i18n="hero.stat3"><i class="fas fa-circle online-dot"></i> Aktif Koç</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="floating-card card-1">
+                    <div class="card-avatar">
+                        <img src="https://i.ibb.co/YTNTzw3s/image.jpg" alt="Dash">
+                    </div>
+                    <div class="card-info">
+                        <h4 data-i18n="coaches.coach1Name">Dash</h4>
+                        <span data-i18n="coaches.coach1Role">Radiant • Baş Koç</span>
+                    </div>
+                    <div class="card-status online"></div>
+                </div>
+                <div class="floating-card card-2">
+                    <div class="card-avatar">
+                        <img src="https://i.ibb.co/WWh03mcG/a63e6c8a-1a82-4962-9cf7-b58ad0414828.jpg" alt="Dowsie">
+                    </div>
+                    <div class="card-info">
+                        <h4 data-i18n="coaches.coach2Name">Dowsie</h4>
+                        <span data-i18n="coaches.coach2Role">Immortal 3 • Koç</span>
+                    </div>
+                    <div class="card-status online"></div>
+                </div>
+                <div class="floating-card card-3">
+                    <div class="card-avatar">
+                        <img src="https://i.ibb.co/gMyYCBLQ/Whats-App-Gorsel-2025-12-16-saat-00-01-58-5d389c3b.jpg" alt="Dugi">
+                    </div>
+                    <div class="card-info">
+                        <h4 data-i18n="coaches.coach3Name">Dugi</h4>
+                        <span data-i18n="coaches.coach3Role">Immortal 2 • Koç</span>
+                    </div>
+                    <div class="card-status online"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge" data-i18n="features.badge"><i class="fas fa-gem"></i> Neden AURA?</span>
+                <h2 class="section-title" data-i18n="features.title">Profesyonel Koçluk Deneyimi</h2>
+                <p class="section-subtitle" data-i18n="features.subtitle">En iyi koçlarla çalışarak hızla gelişin</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-user-graduate"></i></div>
+                    <h3 class="feature-title" data-i18n="features.f1Title">Birebir Özel Dersler</h3>
+                    <p class="feature-desc" data-i18n="features.f1Desc">Size özel hazırlanan ders programı ile hızla ilerleyin</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-video"></i></div>
+                    <h3 class="feature-title" data-i18n="features.f2Title">VOD Analizleri</h3>
+                    <p class="feature-desc" data-i18n="features.f2Desc">Oyunlarınızı birlikte izleyip hatalarınızı ve eksiklerinizi tespit edelim</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-crosshairs"></i></div>
+                    <h3 class="feature-title" data-i18n="features.f3Title">Aim & Mekanik Eğitimi</h3>
+                    <p class="feature-desc" data-i18n="features.f3Desc">Aim egzersizleri ve mekanik geliştirme programları</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-brain"></i></div>
+                    <h3 class="feature-title" data-i18n="features.f4Title">Game Sense Geliştirme</h3>
+                    <p class="feature-desc" data-i18n="features.f4Desc">Harita bilgisi, rotasyon ve strateji eğitimleri</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="coaches" id="coaches">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge" data-i18n="coaches.badge"><i class="fas fa-crown"></i> Uzman Kadromuzla Tanışın</span>
+                <h2 class="section-title" data-i18n="coaches.title">En İyi Koçlarla Çalışın</h2>
+                <p class="section-subtitle" data-i18n="coaches.subtitle">Radiant ve Immortal seviye koçlarımızla çalışın</p>
+            </div>
+            <div class="coaches-grid">
+                <div class="coach-card">
+                    <div class="coach-status online"><i class="fas fa-circle"></i> Online</div>
+                    <div class="coach-avatar">
+                        <img src="https://i.ibb.co/YTNTzw3s/image.jpg" alt="Dash">
+                    </div>
+                    <h3 class="coach-name" data-i18n="coaches.coach1Name">Dash</h3>
+                    <p class="coach-specialty" data-i18n="coaches.coach1Role">Radiant • Baş Koç</p>
+                    <div class="coach-languages"><i class="fas fa-language"></i> Aim, Movement, Mikro Karar</div>
+                    <div class="coach-rating"><i class="fas fa-star"></i> 5.0 <span>(68 Yorum)</span></div>
+                    <div class="coach-packages">
+                        <div class="package"><i class="fas fa-clock"></i> Birebir Özel Ders</div>
+                        <div class="package"><i class="fas fa-layer-group"></i> Grup Dersleri</div>
+                        <div class="package"><i class="fas fa-video"></i> VOD Analizi</div>
+                    </div>
+                    <button class="coach-btn" data-i18n="coaches.coachBtn">Koçluk Al</button>
+                </div>
+                <div class="coach-card">
+                    <div class="coach-status online"><i class="fas fa-circle"></i> Online</div>
+                    <div class="coach-avatar">
+                        <img src="https://i.ibb.co/WWh03mcG/a63e6c8a-1a82-4962-9cf7-b58ad0414828.jpg" alt="Dowsie">
+                    </div>
+                    <h3 class="coach-name" data-i18n="coaches.coach2Name">Dowsie</h3>
+                    <p class="coach-specialty" data-i18n="coaches.coach2Role">Immortal 3 • Koç</p>
+                    <div class="coach-languages"><i class="fas fa-language"></i> Game Sense, IGL</div>
+                    <div class="coach-rating"><i class="fas fa-star"></i> 5.0 <span>(52 Yorum)</span></div>
+                    <div class="coach-packages">
+                        <div class="package"><i class="fas fa-clock"></i> Birebir Özel Ders</div>
+                        <div class="package"><i class="fas fa-layer-group"></i> Grup Dersleri</div>
+                        <div class="package"><i class="fas fa-video"></i> VOD Analizi</div>
+                    </div>
+                    <button class="coach-btn" data-i18n="coaches.coachBtn">Koçluk Al</button>
+                </div>
+                <div class="coach-card">
+                    <div class="coach-status online"><i class="fas fa-circle"></i> Online</div>
+                    <div class="coach-avatar">
+                        <img src="https://i.ibb.co/gMyYCBLQ/Whats-App-Gorsel-2025-12-16-saat-00-01-58-5d389c3b.jpg" alt="Dugi">
+                    </div>
+                    <h3 class="coach-name" data-i18n="coaches.coach3Name">Dugi</h3>
+                    <p class="coach-specialty" data-i18n="coaches.coach3Role">Immortal 2 • Koç</p>
+                    <div class="coach-languages"><i class="fas fa-language"></i> Game Sense, Aim</div>
+                    <div class="coach-rating"><i class="fas fa-star"></i> 5.0 <span>(41 Yorum)</span></div>
+                    <div class="coach-packages">
+                        <div class="package"><i class="fas fa-clock"></i> Birebir Özel Ders</div>
+                        <div class="package"><i class="fas fa-layer-group"></i> Grup Dersleri</div>
+                        <div class="package"><i class="fas fa-video"></i> VOD Analizi</div>
+                    </div>
+                    <button class="coach-btn" data-i18n="coaches.coachBtn">Koçluk Al</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge" data-i18n="howItWorks.badge"><i class="fas fa-bolt"></i> Nasıl İşliyor?</span>
+                <h2 class="section-title" data-i18n="howItWorks.title">4 Basit Adımda Gelişim</h2>
+                <p class="section-subtitle" data-i18n="howItWorks.subtitle">Kısa sürede seviyenizi yükseltin</p>
+            </div>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-icon"><i class="fas fa-paper-plane"></i></div>
+                    <h3 class="step-title" data-i18n="howItWorks.step1Title">Başvur Yap</h3>
+                    <p class="step-desc" data-i18n="howItWorks.step1Desc">Formu doldurun ve bize ulaşın</p>
+                </div>
+                <div class="step-line"></div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-icon"><i class="fas fa-handshake"></i></div>
+                    <h3 class="step-title" data-i18n="howItWorks.step2Title">Koçunuzla Tanışın</h3>
+                    <p class="step-desc" data-i18n="howItWorks.step2Desc">Seviyenize ve hedefinize uygun koçu belirleyin</p>
+                </div>
+                <div class="step-line"></div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-icon"><i class="fas fa-book"></i></div>
+                    <h3 class="step-title" data-i18n="howItWorks.step3Title">Derslere Başla</h3>
+                    <p class="step-desc" data-i18n="howItWorks.step3Desc">Programınızı oluşturun ve derslere başlayın</p>
+                </div>
+                <div class="step-line"></div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-icon"><i class="fas fa-trophy"></i></div>
+                    <h3 class="step-title" data-i18n="howItWorks.step4Title">Rank Atla!</h3>
+                    <p class="step-desc" data-i18n="howItWorks.step4Desc">Hedefinize ulaşın ve oyunun keyfini çıkarın</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge" data-i18n="testimonials.badge"><i class="fas fa-quote-left"></i> Öğrencilerimiz Ne Diyor?</span>
+                <h2 class="section-title" data-i18n="testimonials.title">Başarı Hikayeleri</h2>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonial-card active">
+                    <div class="testimonial-avatar">
+                        <img src="https://i.ibb.co/9ktdHpgb/5a95dfdc2660b8766e43e8848e05a487.webp" alt="Aerica">
+                    </div>
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text" data-i18n="testimonials.t1Text">Koçluğa plat 2'de başladım; aimime and movementıma güvenmiyordum. İlk haftadan itibaren antrenmanların etkisini hissettim, özgüvenim arttı. Smoke, skill kullanımı, peek ve movementım belirgin şekilde gelişti. 2. haftada dia1 oldum, sonra iniş çıkışlarla dia2'ye çıktım. Oyun bilgim, ajan ve skill farkındalığım ciddi şekilde arttı. 2 hafta ara verip rank düşsem de çalışmaya dönünce sezon bitmeden yüceliye ulaştım.</p>
+                    <div class="testimonial-author">
+                        <h4 data-i18n="testimonials.t1Name">Aerica</h4>
+                        <span data-i18n="testimonials.t1Rank">Plat 2 → Yücelik 2</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-avatar">
+                        <img src="https://i.ibb.co/m5X5KXkg/51ee7c33af54c24cd71f123e08a896eb.webp" alt="Nhifty">
+                    </div>
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text" data-i18n="testimonials.t2Text">Koçlar her derste birebir ilgilenip eksiklerinizi tespit ediyor ve samimi yaklaşarak gelişimi kolaylaştırıyor. Başta tereddüt etsem de iyi ki almışım; aimim, movementım ve gamesense'im ilk günlerde inanılmaz gelişti. VOD dersleri sayesinde hatalarımı görüp düzeltmeye başladım. Gönül rahatlığıyla söyleyebilirim ki kesinlikle pişman olmayacaksınız.</p>
+                    <div class="testimonial-author">
+                        <h4 data-i18n="testimonials.t2Name">Nhifty</h4>
+                        <span data-i18n="testimonials.t2Rank">Plat 3 → Yücelik 1</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-avatar">
+                        <img src="https://i.ibb.co/Kj26m1NR/ef6894b06aac69c77f635f0a5bf5df61.webp" alt="Eno">
+                    </div>
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text" data-i18n="testimonials.t3Text">Koçluk sistemi oldukça stabil ve tamamen kişiye özel işliyor. Aim, movement, game sense gibi konuları basit ve anlaşılır bir dille anlatıyorlar. Koçluğu almadan önce Yücelik 2'ydim, aldıktan 1 ay sonra Immortal 2'ye kadar çıktım.</p>
+                    <div class="testimonial-author">
+                        <h4 data-i18n="testimonials.t3Name">Eno</h4>
+                        <span data-i18n="testimonials.t3Rank">Yücelik 2 → Immortal 3</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-avatar">
+                        <img src="https://i.ibb.co/SXyqWp3D/a912a7a185901cb5ca4840a406456a80.webp" alt="Axolotone">
+                    </div>
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text" data-i18n="testimonials.t4Text">Plat 2'yken koçluk almayı düşünmeye başladım, bir süre araştırdım ve Dash'i buldum. 1 aylık paket alıp başladım, her şey çok iyi gidiyordu. Önce dia, sonra yüce ve ardından immo oldum. 3 aylık gibi kısa bir sürede immo oldum, her şey için çok teşekkürler!</p>
+                    <div class="testimonial-author">
+                        <h4 data-i18n="testimonials.t4Name">Axolotone</h4>
+                        <span data-i18n="testimonials.t4Rank">Plat 2 → Immortal</span>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-controls">
+                <button class="slider-btn prev" id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+                <div class="slider-dots" id="sliderDots"></div>
+                <button class="slider-btn next" id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge" data-i18n="faq.badge"><i class="fas fa-question-circle"></i> Sıkça Sorulan Sorular</span>
+                <h2 class="section-title" data-i18n="faq.title">Merak Ettikleriniz</h2>
+                <p class="section-subtitle" data-i18n="faq.subtitle">Aklınıza takılan soruların cevapları burada!</p>
+            </div>
+            
+            <div class="faq-container">
+                <div class="faq-item active">
+                    <div class="faq-question">
+                        <h3 data-i18n="faq.q1Title">Dersler birebir mi, yoksa grup şeklinde mi yapılıyor?</h3>
+                        <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-i18n="faq.q1Text">Dersleri isterseniz birebir, isterseniz sınıf mantığıyla grup dersi şekilde alabilirsiniz. Birebir dersler tamamen kişiye özel ilerlerken, grup dersleri belirli bir müfredat doğrultusunda ilerler ve kendi seviyenizle eşit öğrencilerle eğitim alırsınız.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3 data-i18n="faq.q2Title">Haftalık ders sayısı ve süreleri nasıl planlanıyor?</h3>
+                        <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-i18n="faq.q2Text">Haftada en az 4 ders almanızı öneriyoruz. Her ders standard olarak 1 saat sürer ve ders programı organizatör ile size en uygun zamanlara göre ayarlanır.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3 data-i18n="faq.q3Title">VOD analizleri nasıl gerçekleştiriliyor?</h3>
+                        <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-i18n="faq.q3Text">Oyunlarınızı kaydedip koçunuza iletiyorsunuz. Koçunuzla birlikte VOD'u baştan sona izleyerek hatalarınız, kaçırdığınız fırsatlar, konum alma, karar verme ve mekanikleriniz detaylı şekilde analiz edilir.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3 data-i18n="faq.q4Title">Koçlarla ders dışında iletişim kurabilir miyim?</h3>
+                        <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-i18n="faq.q4Text">Evet! Ders dışında da koçlarınızla konuşabilir, soru sorabilir veya tavsiye alabilirsiniz. Destek sadece derste sınırlı kalmaz.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3 data-i18n="faq.q5Title">Topluluk ortamı nasıl? Oyun arkadaşları bulabilir miyim?</h3>
+                        <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-i18n="faq.q5Text">Oldukça canlı ve aktif bir topluluğumuz var. Diğer öğrencilerle sohbet edebilir, scrim'lere katılabilir, kendinize oyun arkadaşları bulabilir veya toplulukla birlikte aktiviteler yapabilirsiniz.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3 data-i18n="faq.q6Title">Ödemeler ve abonelik sistemi nasıl işliyor?</h3>
+                        <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-i18n="faq.q6Text">Ödemeler Discord üzerinden, organizatörün yönlendirdiği adımlar ile güvenli bir şekilde gerçekleştirilmektedir.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3 data-i18n="faq.q7Title">Koçluk sistemi ne kadar sürede gelişim sağlar?</h3>
+                        <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-i18n="faq.q7Text">Net bir gelişim için en az 1 ay (16 ders) almanızı öneriyoruz. Tıpkı spor gibi: Ne kadar düzenli gelirseniz, o kadar hızlı ve kalıcı gelişirsiniz!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta" id="apply">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title" data-i18n="cta.title">Hemen Başvur ve Gelişmeye Başla!</h2>
+                <p class="cta-subtitle" data-i18n="cta.subtitle">Koçluk ücreti mevcut rank ve hedef rankına göre değişiklik gösteriyor. Formda verdiğiniz bilgilere göre size özel fiyatlandırmayı ileteceğiz!</p>
+                <a href="#apply" class="btn-primary" data-i18n="cta.btn"><i class="fas fa-paper-plane"></i> Hemen Başvur</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <div class="logo-icon"><i class="fas fa-star"></i></div>
+                        AURA<span class="logo-highlight">COACHING</span>
+                    </div>
+                    <p class="footer-desc" data-i18n="footer.desc">Türkiye'nin en profesyonel Valorant koçluk platformu</p>
+                    <div class="footer-social">
+                        <a href="https://discord.gg/srKYEKXUYW" target="_blank" class="social-icon"><i class="fab fa-discord"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">Platform</h4>
+                    <a href="#coaches" class="footer-link" data-i18n="footer.link1">Koçlarımız</a>
+                    <a href="#how-it-works" class="footer-link" data-i18n="footer.link2">Nasıl Çalışır?</a>
+                    <a href="#features" class="footer-link" data-i18n="footer.link3">Özellikler</a>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title" data-i18n="footer.support">Destek</h4>
+                    <a href="#faq" class="footer-link" data-i18n="footer.faq"><i class="fas fa-question-circle"></i> Sıkça Sorulan Sorular</a>
+                    <a href="mailto:info@auracoaching.com.tr" class="footer-link" data-i18n="footer.contact"><i class="fas fa-envelope"></i> info@auracoaching.com.tr</a>
+                    <a href="https://discord.gg/srKYEKXUYW" target="_blank" class="footer-link" data-i18n="footer.discord"><i class="fab fa-discord"></i> Discord Sunucumuz</a>
+                    <a href="#" class="footer-link" data-i18n="footer.privacy">Gizlilik Politikası</a>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title" data-i18n="footer.info">Hızlı Bilgi</h4>
+                    <p class="footer-newsletter" style="color: var(--text-muted); line-height: 1.8;">
+                        <span data-i18n="footer.ageWarning">⚠️ Koçluk için yaş sınırı 16'dır</span>
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-i18n="footer.copyright">&copy; 2026 AURA COACHING. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Application Modal -->
+    <div class="modal-overlay" id="applicationModal">
+        <div class="modal">
+            <div class="modal-header">
+                <h2 data-i18n="application.title"><i class="fas fa-rocket"></i> AURA'ya Başvur</h2>
+                <button class="modal-close" id="closeModal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-content">
+                <form class="application-form" id="applicationForm">
+                    <div class="form-group">
+                        <label for="fullName" data-i18n="application.fullName">Ad Soyad *</label>
+                        <input type="text" id="fullName" required placeholder="Adınız ve soyadınız" data-i18n-placeholder="application.fullNamePlaceholder">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="discord" data-i18n="application.discord">Discord Kullanıcı Adı *</label>
+                        <input type="text" id="discord" required placeholder="kullanici#1234" data-i18n-placeholder="application.discordPlaceholder">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email" data-i18n="application.email">E-posta</label>
+                        <input type="email" id="email" placeholder="ornek@email.com" data-i18n-placeholder="application.emailPlaceholder">
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="currentRank" data-i18n="application.currentRank">Mevcut Rank *</label>
+                            <select id="currentRank" required>
+                                <option value="" data-i18n="rankSelect">Seçiniz</option>
+                                <option value="Iron">Iron</option>
+                                <option value="Bronze">Bronze</option>
+                                <option value="Silver">Silver</option>
+                                <option value="Gold">Gold</option>
+                                <option value="Platinum">Platinum</option>
+                                <option value="Diamond">Diamond</option>
+                                <option value="Ascendant">Ascendant</option>
+                                <option value="Immortal">Immortal</option>
+                                <option value="Radiant">Radiant</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="targetRank" data-i18n="application.targetRank">Hedef Rank *</label>
+                            <select id="targetRank" required>
+                                <option value="" data-i18n="rankSelect">Seçiniz</option>
+                                <option value="Iron">Iron</option>
+                                <option value="Bronze">Bronze</option>
+                                <option value="Silver">Silver</option>
+                                <option value="Gold">Gold</option>
+                                <option value="Platinum">Platinum</option>
+                                <option value="Diamond">Diamond</option>
+                                <option value="Ascendant">Ascendant</option>
+                                <option value="Immortal">Immortal</option>
+                                <option value="Radiant">Radiant</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="preferredCoach" data-i18n="application.preferredCoach">Tercih Ettiğiniz Koç (İsteğe Bağlı)</label>
+                        <select id="preferredCoach">
+                        <option value="" data-i18n="application.anyCoach">Herhangi bir koç</option>
+                        <option value="Dash">Dash (Radiant • Baş Koç)</option>
+                        <option value="Dowsie">Dowsie (Immortal 3)</option>
+                        <option value="Dugi">Dugi (Immortal 2)</option>
+                    </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message" data-i18n="application.message">Ekstra Bilgiler</label>
+                        <textarea id="message" rows="4" placeholder="Hedefleriniz, hangi konuda gelişmek istediğiniz vb." data-i18n-placeholder="application.messagePlaceholder"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn-primary btn-submit">
+                        <i class="fas fa-paper-plane"></i> <span data-i18n="application.submit">Başvuruyu Gönder</span>
+                    </button>
+                    
+                    <p class="form-note" data-i18n="application.note">
+                        <i class="fas fa-info-circle"></i> Koçluk için yaş sınırı 16'dır. Başvurunuz sonrası size Discord üzerinden ulaşılacaktır.
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Login/Signup Modal -->
+    <div class="modal-overlay" id="authModal">
+        <div class="modal auth-modal">
+            <button class="modal-close" id="closeAuthModal">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-content">
+                <!-- Logo Icon -->
+                <div class="auth-logo-icon">
+                    <div class="logo-icon-inner">
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <!-- Welcome Text -->
+                <h2 class="auth-welcome-title" data-i18n="auth.welcome">Hoş Geldin</h2>
+                <p class="auth-welcome-subtitle" data-i18n="auth.welcomeSub">Hesabınla giriş yap, koçunu bul</p>
+                
+                <!-- Google Login Button -->
+                <button class="google-login-btn">
+                    <img src="https://img.icons8.com/color/48/google-logo.png" alt="Google">
+                    <span data-i18n="auth.googleLogin">Google ile giriş yap</span>
+                </button>
+                
+                <!-- Divider -->
+                <div class="auth-divider">
+                    <span data-i18n="auth.orEmail">E-posta ile devam et</span>
+                </div>
+                
+                <!-- Login Form -->
+                <form class="auth-form" id="loginForm">
+                    <div class="form-group">
+                        <label data-i18n="auth.emailOrUsername">E-posta veya Kullanıcı Adı</label>
+                        <input type="text" required placeholder="Neo_Zech" data-i18n-placeholder="auth.emailOrUsernamePlaceholder">
+                    </div>
+                    <div class="form-group">
+                        <div class="password-label-row">
+                            <label data-i18n="auth.password">Şifre</label>
+                            <a href="#" class="forgot-password" data-i18n="auth.forgot">Şifremi unuttum</a>
+                        </div>
+                        <input type="password" required placeholder="••••••••" data-i18n-placeholder="auth.passwordPlaceholder">
+                    </div>
+                    <button type="submit" class="btn-primary btn-submit auth-main-btn">
+                        <span data-i18n="auth.loginBtn">Giriş Yap</span>
+                    </button>
+                </form>
+                
+                <!-- Signup Form -->
+                <form class="auth-form" id="signupForm" style="display: none;">
+                    <div class="form-group">
+                        <label data-i18n="auth.fullName">Ad Soyad</label>
+                        <input type="text" required placeholder="Adınız Soyadınız" data-i18n-placeholder="auth.fullNamePlaceholder">
+                    </div>
+                    <div class="form-group">
+                        <label data-i18n="auth.email">E-posta</label>
+                        <input type="email" required placeholder="ornek@email.com" data-i18n-placeholder="auth.emailPlaceholder">
+                    </div>
+                    <div class="form-group">
+                        <label data-i18n="auth.password">Şifre</label>
+                        <input type="password" required placeholder="••••••••" data-i18n-placeholder="auth.passwordPlaceholder">
+                    </div>
+                    <button type="submit" class="btn-primary btn-submit auth-main-btn">
+                        <span data-i18n="auth.signupBtn">Kayıt Ol</span>
+                    </button>
+                </form>
+                
+                <!-- Switch between login/signup -->
+                <div class="auth-switch">
+                    <p>
+                        <span id="switchText" data-i18n="auth.noAccount">Hesabın yok mu?</span>
+                        <button id="switchTabBtn" data-i18n="auth.signupNow">Kayıt Ol</button>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div class="modal-overlay" id="successModal">
+        <div class="modal success-modal">
+            <div class="success-icon">
+                <div class="success-circle">
+                    <i class="fas fa-check"></i>
+                </div>
+            </div>
+            <h2 class="success-title" data-i18n="success.title">Başvurunuz Başarıyla Alındı!</h2>
+            <p class="success-text" data-i18n="success.text">En kısa sürede Discord üzerinden size ulaşacağız. Lütfen beklemede kalın.</p>
+            <button class="btn-primary" id="closeSuccessModal">
+                <i class="fas fa-times"></i> <span data-i18n="success.close">Kapat</span>
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
